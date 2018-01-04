@@ -18,8 +18,14 @@
     "gulp-watch": "*",
     "gulp-connect": "*",
     "gulp-uglify": "*",
-    "gulp-replace": "*"
+    "gulp-replace": "*",
+    "snyk": "^1.65.0"
   },
   "analyze": true,
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
